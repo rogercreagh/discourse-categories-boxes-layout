@@ -20,7 +20,7 @@ export default {
 
       api.modifyClass("route:discovery.categories", {
         findCategories() {
-          let style = !this.site.mobileView && settings.categories_layout;
+          let style = settings.categories_layout;
 
           let parentCategory = this.get("model.parentCategory");
           if (parentCategory) {

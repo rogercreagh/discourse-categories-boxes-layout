@@ -1,4 +1,5 @@
-/* modifications to the category boxes */
+/* modifications to the category boxes styles*/
+
 .category-boxes {
     .description {
         font-size: 0.9em;
@@ -12,9 +13,14 @@
     .category-box {
         .category-box-inner .category-logo{
             float:left;
+            width:60px;
         }
         .logo.aspect-image img {
             margin: 0;
+        }
+        .category-box-heading {
+            margin:5px 0 0 20px;
+            font-size: 1.1em;
         }
     }
     .subcategories {
@@ -23,17 +29,25 @@
         line-height:1.1em;
 
         .subcategory {
+            flex-direction:column;
+            align-items:flex-start;
             margin-right: 0;
             margin-bottom: 0.2em;
+
             .category-name {
                 color: #08c;
                 font-weight:normal;
             }
+            
             .subcategory-image-placeholder {
                 display: inline-block;
                 margin-right: 11px;
+                
+                .category-logo {
+                    display:none;
+                }
             }
-
+.category-boxes .category-box .category-box-inner .category-logo 
             .logo img {
                 margin: 0;
                 display: inline-block;
